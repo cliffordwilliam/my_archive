@@ -1,7 +1,10 @@
 ---
-title: "POST-TITLE"
-date: 2024-09-12 01:00:00 -0000
+title: "My First Post"
 categories: diary programming
 ---
 
-first content
+# Welcome
+
+**Hello world**, this is my first Jekyll blog post.
+
+I hope you like it!
