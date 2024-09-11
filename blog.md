@@ -13,6 +13,5 @@ title: Blog Posts
       <br>
       <p>{{ post.excerpt | strip_html }}</p>
     </li>
-    <hr>
   {% endfor %}
 </ul>
