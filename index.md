@@ -2,6 +2,6 @@
 title: "Home"
 ---
 
-# Welcome
+## Welcome
 
 Write home intro here
