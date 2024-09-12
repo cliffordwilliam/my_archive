@@ -29,28 +29,45 @@
               href="{{ '/blog.html' | relative_url }}">Blog</a>
           </li>
           <li class="nav-item dropdown">
-            <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center show" id="bd-theme"
-              type="button" aria-expanded="true" data-bs-toggle="dropdown" data-bs-display="static"
-              aria-label="Toggle theme (dark)">
-              <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+            <button class="btn btn-link nav-link dropdown-toggle show" id="bd-theme" type="button" aria-expanded="false"
+              data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (dark)">
+              <svg class="bi theme-icon-active">
+                <use href="#moon-stars-fill"></use>
+              </svg>
+              <span id="bd-theme-text">Toggle theme</span>
             </button>
             <ul class="dropdown-menu dropdown-menu-end show" aria-labelledby="bd-theme-text" data-bs-popper="static">
               <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
-                  aria-pressed="false">
+                <button type="button" class="dropdown-item" data-bs-theme-value="light" aria-pressed="false">
+                  <svg class="bi opacity-50">
+                    <use href="#sun-fill"></use>
+                  </svg>
                   Light
+                  <svg class="bi d-none">
+                    <use href="#check2"></use>
+                  </svg>
                 </button>
               </li>
               <li>
-                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark"
-                  aria-pressed="true">
+                <button type="button" class="dropdown-item active" data-bs-theme-value="dark" aria-pressed="true">
+                  <svg class="bi opacity-50">
+                    <use href="#moon-stars-fill"></use>
+                  </svg>
                   Dark
+                  <svg class="bi d-none">
+                    <use href="#check2"></use>
+                  </svg>
                 </button>
               </li>
               <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
-                  aria-pressed="false">
+                <button type="button" class="dropdown-item" data-bs-theme-value="auto" aria-pressed="false">
+                  <svg class="bi opacity-50">
+                    <use href="#circle-half"></use>
+                  </svg>
                   Auto
+                  <svg class="bi d-none">
+                    <use href="#check2"></use>
+                  </svg>
                 </button>
               </li>
             </ul>
