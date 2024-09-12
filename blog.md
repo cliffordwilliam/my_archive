@@ -20,6 +20,3 @@ Below is a list of posts, arranged from the most recent to the oldest.
     </div>
   {% endfor %}
 </div>
-
-<div class="row row-cols-1 row-cols-md-3 g-4">
-</div>
