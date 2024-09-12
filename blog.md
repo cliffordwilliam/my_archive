@@ -9,8 +9,8 @@ Below is a list of posts, arranged from the most recent to the oldest.
     <div class="col">
       <div class="card h-100">
         <div class="card-body">
-          <h2 class="card-title">{{ post.title }}</h2>
-          <h3 class="card-subtitle mb-2 text-body-secondary">{{ post.date | date: "%B %d, %Y" }}</h3>
+          <h2 class="h5 card-title">{{ post.title }}</h2>
+          <h3 class="h6 card-subtitle mb-2 text-body-secondary">{{ post.date | date: "%B %d, %Y" }}</h3>
           <p class="card-text">{{ post.excerpt | strip_html }}</p>
           <a href="{{ post.url | relative_url }}" class="card-link stretched-link">Continue reading</a>
         </div>
