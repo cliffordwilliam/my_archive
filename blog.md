@@ -8,13 +8,11 @@ Below is a list of posts, arranged from the most recent to the oldest.
   {% for post in site.posts %}
     <div class="col">
       <div class="card h-100">
-        <div class="card-body p-4 d-flex flex-column">
-          <h3 class="card-title mb-0">{{ post.title }}</h3>
-          <small class="text-body-secondary mb-1">{{ post.date | date: "%B %d, %Y" }}</small>
-          <p class="card-text mb-auto">{{ post.excerpt | strip_html }}</p>
-          <a href="{{ post.url | relative_url }}" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-          </a>
+        <div class="card-body">
+          <h2 class="card-title">{{ post.title }}</h2>
+          <h3 class="card-subtitle mb-2 text-body-secondary">{{ post.date | date: "%B %d, %Y" }}</h3>
+          <p class="card-text">{{ post.excerpt | strip_html }}</p>
+          <a href="{{ post.url | relative_url }}" class="card-link stretched-link">Continue reading</a>
         </div>
       </div>
     </div>
