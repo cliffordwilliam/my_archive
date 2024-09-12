@@ -2,9 +2,7 @@
 title: Blog Posts
 ---
 
-## Blog Posts List
-
-Write body here
+Below is a list of posts, arranged from the most recent to the oldest.
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
   {% for post in site.posts %}
