@@ -15,3 +15,4 @@ domain: "cliffordwilliam.github.io"       # if you want to force HTTPS, specify 
 url: "https://cliffordwilliam.github.io"  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: "/my_archive"      # place folder name if the site is served in a subfolder
 excerpt_separator: "<!--more-->"
+author_name: "Clifford William"
