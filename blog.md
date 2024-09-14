@@ -19,13 +19,15 @@ Filter and pagination are not supported for this site, use the `ctrl + f` to fin
           <h2 class="h5 card-title">{{ post.title }}</h2>
           <h3 class="h6 card-subtitle mb-2 text-body-secondary">{{ post.date | date: "%B %d, %Y" }}</h3>
           <p class="card-text text-truncate" style="max-width: 100%;">{{ post.description }}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          {% for tag in page.tags %}
+            <li class="list-group-item">{{ tag }}</a>
+          {% endfor %}
+        </ul>
+        <div class="card-body">
           <a href="{{ site.baseurl }}{{ post.url }}" class="card-link stretched-link">Continue reading</a>
         </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
       </div>
     </div>
   {% endfor %}
