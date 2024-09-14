@@ -1,6 +1,7 @@
 ---
 title: "GitHub Pages site with Jekyll"
 date: 2024-09-12 22:49:21 -0000
+thumbnail: undraw_website_5bo8.svg
 ---
 
 Create static site with GitHub Pages and Jekyll.
