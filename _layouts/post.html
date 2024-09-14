@@ -7,9 +7,8 @@ layout: default
         <li class="breadcrumb-item">
             <a href="{{site.data.navigation.navigations[1].url}}">Blog</a>
         </li>
-        {% assign item = site.navigations | where: "url", page.url | first %}
         <li class="breadcrumb-item active" aria-current="page">
-            {{ item.title }}
+            {{ page.title }}
         </li>
     </ol>
 </nav>
