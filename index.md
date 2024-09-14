@@ -15,7 +15,7 @@ To know how this site was built, [visit GitHub Pages and Jekyll blog]({{ site.ba
 
 All vector illustrations on this site are courtesy of [undraw.co](https://undraw.co/). I love using vector images because they scale perfectly to any size, and Undraw has a vast collection of illustrations to choose from. Images help me associate ideas better—especially when it comes to recalling information. For the site’s styling, I’m using [Bootstrap](https://getbootstrap.com/). While I could design my own CSS, Bootstrap saves me time by handling accessibility and cross-browser compatibility, which is why I prefer it. The design might be simple, but as long as it’s clean and easy to read, it works for me.
 
-## Latest post
+<h2 class="mt-5">Latest post</h2>
 
 Here's the most recent blog post:
 

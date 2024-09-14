@@ -10,7 +10,7 @@ I’ve always found it essential to organize and preserve the knowledge I accumu
 
 GitHub Pages, combined with Jekyll, provides the perfect solution. It allows me to create, read, update, and delete content instantly, all while eliminating the cost of notebooks and pens. I can search through my notes using the browser’s built-in search functionality and rest easy knowing my data is safe on GitHub’s servers, with the option to back it up locally at any time.
 
-## Who Am I
+<h2 class="mt-5">Who Am I</h2>
 
 I’m Clifford William, a full-stack web developer from Indonesia. I’m passionate about learning, collecting information, and sharing knowledge. I strive to continuously improve, not only to support myself and my family through freelance work but also to contribute meaningfully to society.
 
@@ -18,7 +18,7 @@ In my free time, I’m working on a passion project—developing a video game th
 
 Outside of work, I live a simple life, dedicated to learning new things and applying that knowledge. My interests span from programming and languages to history, finance, cars, art, cooking, and more. This site serves as a repository for everything I learn, and I hope it will be useful to others as well.
 
-## Contact Me
+<h2 class="mt-5">Contact Me</h2>
 
 Feel free to reach out for a chat or business inquiries:
 
