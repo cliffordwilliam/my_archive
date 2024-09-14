@@ -6,6 +6,6 @@ h6 {
     margin-top: 3rem;
 }
 
-pre {
+#post-content-container>div.language-yaml.highlighter-rouge>div>pre {
     padding: 1rem;
 }
