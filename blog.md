@@ -21,7 +21,7 @@ Filter and pagination are not supported for this site, use the `ctrl + f` to fin
           <p class="card-text text-truncate" style="max-width: 100%;">{{ post.description }}</p>
         </div>
         <ul class="list-group list-group-flush">
-          {% for tag in page.tags %}
+          {% for tag in post.tags %}
             <li class="list-group-item">
               <a class="card-link" href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
             </li>
