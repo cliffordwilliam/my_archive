@@ -13,11 +13,6 @@
   <script src="{{ site.baseurl }}/assets/js/highlightjs-copy.min.js" defer></script>
   <script src="{{ site.baseurl }}/assets/js/bash.min.js" defer></script>
   <script src="{{ site.baseurl }}/assets/js/yaml.min.js" defer></script>
-  <script defer>
-    // Highlight code snippet.
-    hljs.addPlugin(new CopyButtonPlugin());
-    hljs.highlightAll();
-  </script>
 </head>
 
 <body>
@@ -143,6 +138,11 @@
       <span class="mb-3 mb-md-0 text-body-secondary">&copy; {{ site.author_name }}</span>
     </div>
   </footer>
+  <script>
+    // Highlight code snippet.
+    hljs.addPlugin(new CopyButtonPlugin());
+    hljs.highlightAll();
+  </script>
 </body>
 
 </html>
