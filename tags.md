@@ -1,12 +1,12 @@
 ---
 title: Tags
-description: "Below is a list of posts organized under their tags, arranged from the most recent to the oldest. Pagination does not work here due to Jekyll limitations."
+description: "Posts here are organized by their tags, arranged from latest to olders. Note: This site uses GitHub Pages and Jekyll pagination isn't supported on GitHub Pages."
 thumbnail: "undraw_choose_color_uotg.svg"
 ---
 
 ## Tags
 
-Blog posts are categorized under certain tags. Filter and pagination are not supported for this site, use the `ctrl + f` to find relevant topic. Click cards below to read further.
+To explore each post, click the **Continue reading** button below the preview. Since pagination isn't available on GitHub Pages, you can quickly find specific posts by using `ctrl + f` to search for keywords. Alternatively, visit the [tags page]({{ site.baseurl }}{{ site.data.navigation.navigations[2].url }}) to filter posts by tags and browse them from newest to oldest.
 
 {% for tag in site.tags %}
   <div class="py-5">
