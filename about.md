@@ -1,7 +1,7 @@
 ---
 title: "About"
 description: "I am Clifford William. A full-stack developer. I like to study and collect useful information."
-thumbnail: "undraw_warning_re_eoyh.svg"
+thumbnail: "undraw_drink_coffee_v3au.svg"
 ---
 
 ## Why make this

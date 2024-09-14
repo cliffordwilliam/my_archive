@@ -1,7 +1,7 @@
 ---
 title: "Home"
 description: "Welcome to my personal archive, a collection of knowledge and insights I’ve gathered over time. Each entry is organized into posts, making it easy to explore."
-thumbnail: "undraw_warning_re_eoyh.svg"
+thumbnail: "undraw_undraw_undraw_undraw_undraw_website_o7n3_bucy_30uo_-1-_d6br_0qfo.svg"
 ---
 
 ## Introduction
