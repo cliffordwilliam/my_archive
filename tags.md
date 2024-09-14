@@ -9,22 +9,31 @@ thumbnail: "undraw_undraw_posts_givd_-1-_5vi7.svg"
 Blog posts are categorized under certain tags. Filter and pagination are not supported for this site, use the `ctrl + f` to find relevant topic. Click cards below to read further.
 
 {% for tag in site.tags %}
-  <h3 class="pb-2 border-bottom">{{ tag[0] }}</h3>
-  <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
-    {% for post in tag[1] %}
-    <div class="col">
-      <div class="card h-100">
-        <div class="p-4">
-          <img class="card-img-top" src="{{ site.baseurl }}/assets/svgs/{{ post.thumbnail }}" alt="{{ post.thumbnail }}" style="aspect-ratio: 143 / 90;">
-        </div>
-        <div class="card-body border-top">
-          <h2 class="h5 card-title">{{ post.title }}</h2>
-          <h3 class="h6 card-subtitle mb-2 text-body-secondary">{{ post.date | date: "%B %d, %Y" }}</h3>
-          <p class="card-text text-truncate" style="max-width: 100%;">{{ post.description }}</p>
-          <a href="{{ site.baseurl }}{{ post.url }}" class="card-link stretched-link">Continue reading</a>
+  <div class="py-5">
+    <h3 class="pb-2 border-bottom">{{ tag[0] }}</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+      {% for post in tag[1] %}
+      <div class="col">
+        <div class="card h-100">
+          <div class="p-4">
+            <img class="card-img-top" src="{{ site.baseurl }}/assets/svgs/{{ post.thumbnail }}" alt="{{ post.thumbnail }}" style="aspect-ratio: 143 / 90;">
+          </div>
+          <div class="card-body border-top">
+            <h2 class="h5 card-title">{{ post.title }}</h2>
+            <h3 class="h6 card-subtitle mb-2 text-body-secondary">{{ post.date | date: "%B %d, %Y" }}</h3>
+            <p class="card-text text-truncate" style="max-width: 100%;">{{ post.description }}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            {% for tag in page.tags %}
+              <li class="list-group-item">{{ tag }}</a>
+            {% endfor %}
+          </ul>
+          <div class="card-body">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="card-link stretched-link">Continue reading</a>
+          </div>
         </div>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
 {% endfor %}
