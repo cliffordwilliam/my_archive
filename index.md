@@ -13,7 +13,7 @@ You can explore my [blog]({{ site.baseurl }}{{ site.data.navigation.navigations[
 {% assign specific_post = site.posts | where: "title", "GitHub Pages and Jekyll" | first %}
 To know how this site was built, [visit GitHub Pages and Jekyll blog]({{ site.baseurl }}{{ specific_post.url }}) to learn how to make one yourself for free.
 
-All vector illustrations on this site are courtesy of undraw.co. I love using vector images because they scale perfectly to any size, and Undraw has a vast collection of illustrations to choose from. Images help me associate ideas better—especially when it comes to recalling information. For the site’s styling, I’m using Bootstrap. While I could design my own CSS, Bootstrap saves me time by handling accessibility and cross-browser compatibility, which is why I prefer it. The design might be simple, but as long as it’s clean and easy to read, it works for me.
+All vector illustrations on this site are courtesy of [undraw.co](https://undraw.co/). I love using vector images because they scale perfectly to any size, and Undraw has a vast collection of illustrations to choose from. Images help me associate ideas better—especially when it comes to recalling information. For the site’s styling, I’m using [Bootstrap](https://getbootstrap.com/). While I could design my own CSS, Bootstrap saves me time by handling accessibility and cross-browser compatibility, which is why I prefer it. The design might be simple, but as long as it’s clean and easy to read, it works for me.
 
 ## Latest post
 
