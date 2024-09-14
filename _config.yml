@@ -11,7 +11,7 @@ defaults:
       path: ""
       type: "posts" # previously `page` in Jekyll 2.2.
     values:
-      layout: "default" # overrides previous default layout
+      layout: "post" # overrides previous default layout
 
 # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 domain: "cliffordwilliam.github.io"
