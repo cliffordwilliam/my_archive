@@ -10,67 +10,69 @@ tags:
 
 ## Introduction
 
-Everything you need to know is from <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll" target="_blank">GitHub Docs</a> and from <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>. Summary, GitHub Pages is powered by Jekyll. Work locally with Jekyll opinionated way, on git push event GitHub by default runs Jekyll build process that turns your repo content into only HTML files. Jekyll build process does the manual repetitive HTML writing for you, use Jekyll features to define layout once or store variables so you do not write them multiple times in multiple pages.
+For comprehensive information, refer to the [GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll) and [Jekyll's official site](https://jekyllrb.com/). GitHub Pages uses Jekyll as its static site generator. When you push changes to GitHub, it automatically triggers the Jekyll build process, converting your repository content into static HTML files. Jekyll simplifies the creation of static sites by handling repetitive HTML writing for you. It allows you to define layouts once and use variables, so you don’t have to repeat content across multiple pages.
 
 ## GitHub Pages & Jekyll
 
-### Who can use this?
+### Who Can Use This?
 
-GitHub Pages is available for public repos with GitHub Free (and the free one for organizations). GitHub Pages uses GitHub Actions for Jekyll build by default (bypass with .nojekyll file in root).
+GitHub Pages is available for public repositories with GitHub Free and for free organization accounts. By default, GitHub Pages uses GitHub Actions for Jekyll builds. You can bypass this with a `.nojekyll` file in the root of your repository.
 
 ### About GitHub Pages and Jekyll
 
-Jekyll is a static site generator with built-in support for GitHub Pages. Jekyll turns Markdown, HTML and Liquid (templating language) files into a static site made only out of static HTML site. Jekyll is not officially supported for Windows, no need to setup Jekyll locally, we can use the GitHub Jekyll build instead. Downside is we cannot see the build unless we push to GitHub. You can use other static site generator or edit the build action or build in another servertoo, but we will not cover any of that here.
+Jekyll is a static site generator that integrates seamlessly with GitHub Pages. It transforms Markdown, HTML, and Liquid (a templating language) files into a static site composed solely of HTML. Jekyll is not officially supported on Windows, so you don’t need to set it up locally; GitHub handles the Jekyll build process for you. Note that you won’t see the build output until you push to GitHub. While you can use other static site generators or custom build actions, we’ll focus on Jekyll here.
 
-### Jekyll configuration
+### Jekyll Configuration
 
-`_config.yml` in project root is the Jekyll settings file. Refer <a href="https://jekyllrb.com/docs/configuration/" target="_blank">Jekyll configuration doc</a>. There are some settings that cannot be edited when using GitHub Pages Jekyll. There are folders and files that Jekyll does not build based on their names too (you can force it if you want), see the details on this yourself we do not need to know any of this to make this site.
+The `_config.yml` file in your project root contains Jekyll’s settings. For details, refer to the [Jekyll Configuration Documentation](https://jekyllrb.com/docs/configuration/). Some settings are not editable when using GitHub Pages’ built-in Jekyll. Additionally, certain folders and files are ignored by Jekyll based on their names (though you can force inclusion if necessary). You don’t need to delve into these details to set up your site.
 
-### Front matter
+### Front Matter
 
-Add YAML Front Matter to the top of Markdown or HTML files to add metadata to it like page.title. Refer <a href="https://jekyllrb.com/docs/front-matter/" target="_blank">Jekyll Front Matter doc</a>. When using GitHub with Jekyll, you get `site.github` property, refer <a href="https://jekyll.github.io/github-metadata/site.github/" target="_blank">Jekyll Metadata doc</a>.
+Add YAML Front Matter to the top of your Markdown or HTML files to include metadata like `page.title`. For more information, see the [Jekyll Front Matter Documentation](https://jekyllrb.com/docs/front-matter/). When using GitHub Pages with Jekyll, you also have access to the `site.github` property. For details, refer to the [Jekyll Metadata Documentation](https://jekyll.github.io/github-metadata/site.github/).
 
 ### Theme
 
-There are existing themes that are supported by GitHub but we will not be using that here. Read on that detail yourself.
+GitHub offers several supported themes, but we won’t be using them here. For more information, you can explore the available themes on GitHub.
 
 ### Plugins
 
-GitHub Jekyll has some plugins out of the box, you can also add extra if you want. We will not cover this as well.
+GitHub’s Jekyll setup includes some built-in plugins, and you can add additional ones if needed. However, we won’t cover plugins in this guide.
 
-## Creating a repository for your site
+## Creating a Repository for Your Site
 
-### Create a repo
+### Create a Repository
 
-Name your repo (all lower case in kebab case), you can either create a user or organization site like `<user>.github.io` or `<organization>.github.io`. Set it to public since private ones are not availbale for free ones. Here we use neither, we make our own repo name, you can name it whatever you want.
+Name your repository using all lowercase letters and kebab-case (e.g., `my-repo`). You can create a user or organization site with names like `<user>.github.io` or `<organization>.github.io`, but you can also choose any other name. Make sure to set the repository to public, as private repositories are not available with the free plan.
 
-You can change the publishing source to a different branch dedicated for this site but here we use the main branch, or you can use a certain dir dedicated for this site source files. If you do want to change it there are further configuration that you need to do in GitHub then you should read <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_blank">Configuring a publishing source for your GitHub Pages site.</a>.
+You can configure GitHub Pages to use a different branch or directory for your site’s source files. If you want to change these settings, refer to [Configuring a Publishing Source for Your GitHub Pages Site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
-Edit the `_config.yml` like this:
+Update the `_config.yml` file as follows:
 
-<pre><code># if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+```yaml
+# If you want to force HTTPS, specify the domain without the http at the start, e.g., example.com
 domain: "cliffordwilliam.github.io"
 
-# the base hostname and protocol for your site, e.g. http://example.com
+# The base hostname and protocol for your site, e.g., http://example.com
 url: "https://cliffordwilliam.github.io"
 
-# place folder name if the site is served in a subfolder
+# Specify the folder name if the site is served in a subfolder
 baseurl: "/my_archive"
-</code></pre>
+```
 
-In the above, since we use neither user or organization repo, then we need to set the baseurl. We will use that property whenever we want to declare hyperlinks.
+Since we are not using a user or organization repository, you need to set the `baseurl` property. Use this property when declaring hyperlinks.
 
-You can commit and push. Here we want to first setup this remote repo to publish the site. Go to said repo URL / Settings / Pages. There you need to set main branch and save it.
+Commit and push your changes. To publish your site, go to the repository URL > Settings > Pages. Set the main branch as the publishing source and save the changes.
 
-In the rare occasion that the build fail, re running the build usually puts you in a indefinite queue (you are stuck in limbo since you do not have permission to stop the queue). When that happens you want to do the following:
+If the build fails and you encounter an indefinite queue, you can try:
 
-<pre><code>git commit --amend --no-edit
+```bash
+git commit --amend --no-edit
 git push --force-with-lease
-</code></pre>
+```
 
-That will **create a new commit (even if you did not change anything)**. Then the next one force a push where it **overwrite the old commit**.
+This creates a new commit (even if unchanged) and force pushes it, replacing the old commit.
 
-## Adding content
+## Adding Content
 
 TODO
 
