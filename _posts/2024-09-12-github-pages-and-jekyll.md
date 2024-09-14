@@ -76,6 +76,8 @@ This creates a new commit (even if unchanged) and force pushes it, replacing the
 
 TODO
 
+Had to edit the css that i got here to add padding else wont work even if you link another css after this one
+
 post that tried the right way
 https://talk.jekyllrb.com/t/rouge-code-snippet-highlighting-not-working/121
 
