@@ -1,22 +1,26 @@
 ---
 title: "About"
-description: "I am Clifford William. A full-stack developer. I like to study and collect information."
+description: "I am Clifford William, a full-stack developer passionate about learning and organizing information."
 thumbnail: "undraw_drink_coffee_v3au.svg"
 ---
 
 ## Motivation
 
-GitHub server is very unlikey to go down as major services use it. So I leverage GitHub server as a storage for my life long information storage where I write important things for preservation. I forget things often, so I always write things down in notebooks. Same goes for studying, but that results me having loads of filled notebooks and I have a hard time looking for what I want. So GitHub Pages with Jekyll is the perfect solution. I do not have to waste money buying notebooks and writing utensils. I can CRUD freely and instantenously. I can use the browser API to search keywords, and I can have good persistent storage. Where I do not have to fear of this being lost since it lives in GitHub server and I can always download a backup into any local machine.
+I’ve always found it essential to organize and preserve the knowledge I accumulate. With GitHub's reliability—used by major services worldwide—I’ve chosen to use GitHub as my personal lifelong information storage. Writing things down helps me remember, but physical notebooks can pile up quickly, making it difficult to find specific information when needed.
 
-## Who am I
+GitHub Pages, combined with Jekyll, provides the perfect solution. It allows me to create, read, update, and delete content instantly, all while eliminating the cost of notebooks and pens. I can search through my notes using the browser’s built-in search functionality and rest easy knowing my data is safe on GitHub’s servers, with the option to back it up locally at any time.
 
-I am Clifford William, full-stack web developer from Indonesia. I like to study and collect information. I enjoy learning and trying new things in life and I hate forgetting things. I try to earn money after work with free lancing to support myself and my family. I plan on becoming knowledgable and be able to contribute more to society to be a functioning useful member of society. On the sides I enjoy making video games, right now I am working on a big passion project hobby that I will also create contents for it here, I plan to sell it later in hopes that other people will enjoy playing it as much as I enjoy making it.
+## Who Am I
 
-I life a simple life, I go to work and go home to either learn new things, try said new things, earn more money or work on my passion game project. I like to study on things like programming, languages, history, finances, cars, art, cooking and so much more. I plan on writing them all down here for both myself and others to read.
+I’m Clifford William, a full-stack web developer from Indonesia. I’m passionate about learning, collecting information, and sharing knowledge. I strive to continuously improve, not only to support myself and my family through freelance work but also to contribute meaningfully to society.
 
-## Contact me
+In my free time, I’m working on a passion project—developing a video game that I plan to release in the future. I hope others will enjoy playing it as much as I’ve enjoyed creating it.
 
-Feel free to contact me to talk or for business.
+Outside of work, I live a simple life, dedicated to learning new things and applying that knowledge. My interests span from programming and languages to history, finance, cars, art, cooking, and more. This site serves as a repository for everything I learn, and I hope it will be useful to others as well.
 
-[email](mailto:{{ site.author_email }})
-[linkedin](mailto:{{ site.author_linkedin }})
+## Contact Me
+
+Feel free to reach out for a chat or business inquiries:
+
+- [Email](mailto:{{ site.author_email }})
+- [LinkedIn](mailto:{{ site.author_linkedin }})
