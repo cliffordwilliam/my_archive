@@ -10,7 +10,7 @@ Blog posts are categorized under certain tags. Filter and pagination are not sup
 
 {% for tag in site.tags %}
   <div class="py-5">
-    <h3 class="pb-2 border-bottom">{{ tag[0] }}</h3>
+    <h3 id="#{{ tag | slugize }}" class="pb-2 border-bottom">{{ tag[0] }}</h3>
     <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
       {% for post in tag[1] %}
           <div class="col">
@@ -22,6 +22,7 @@ Blog posts are categorized under certain tags. Filter and pagination are not sup
                 <h2 class="h5 card-title">{{ post.title }}</h2>
                 <h3 class="h6 card-subtitle mb-2 text-body-secondary">{{ post.date | date: "%B %d, %Y" }}</h3>
                 <p class="card-text text-truncate" style="max-width: 100%;">{{ post.description }}</p>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-primary">Continue reading</a>
               </div>
               <ul class="list-group list-group-flush">
                 <div class="card-header">
@@ -29,13 +30,10 @@ Blog posts are categorized under certain tags. Filter and pagination are not sup
                 </div>
                 {% for tag in post.tags %}
                   <li class="list-group-item">
-                    <a class="card-link" href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
+                    <a class="card-link" href="{{site.baseurl}}/tags.html#{{tag|slugize}}">{{tag}}</a>
                   </li>
                 {% endfor %}
               </ul>
-              <div class="card-body">
-                <a href="{{ site.baseurl }}{{ post.url }}" class="card-link">Continue reading</a>
-              </div>
             </div>
           </div>
       {% endfor %}
