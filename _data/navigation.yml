@@ -5,8 +5,8 @@ navigations:
   - title: Blog
     url: "/blog.html"
   
-  - title: About
-    url: "/about.html"
-  
   - title: Tags
     url: "/tags.html"
+  
+  - title: About
+    url: "/about.html"

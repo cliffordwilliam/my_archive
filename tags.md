@@ -24,6 +24,9 @@ Blog posts are categorized under certain tags. Filter and pagination are not sup
                 <p class="card-text text-truncate" style="max-width: 100%;">{{ post.description }}</p>
               </div>
               <ul class="list-group list-group-flush">
+                <div class="card-header">
+                  Tags
+                </div>
                 {% for tag in post.tags %}
                   <li class="list-group-item">
                     <a class="card-link" href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
