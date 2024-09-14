@@ -1,8 +1,8 @@
 ---
-title: Blog Posts
+title: Blog
 ---
 
-Below is a list of posts, arranged from the most recent to the oldest.
+Below is a list of posts, arranged from the most recent to the oldest. Pagination does not work here due to Jekyll limitations.
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
   {% for post in site.posts %}

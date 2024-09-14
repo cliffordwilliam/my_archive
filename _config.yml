@@ -26,3 +26,5 @@ excerpt_separator: "<!--more-->"
 
 author_name: "Clifford William"
 author_email: ccliffordwilliam@gmail.com
+
+paginate: 5
