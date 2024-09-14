@@ -18,7 +18,7 @@ Filter and pagination are not supported for this site, use the `ctrl + f` to fin
         <div class="card-body border-top">
           <h2 class="h5 card-title">{{ post.title }}</h2>
           <h3 class="h6 card-subtitle mb-2 text-body-secondary">{{ post.date | date: "%B %d, %Y" }}</h3>
-          <p class="card-text text-truncate" style="max-width: 100%;">{{ post.excerpt | strip_html }}</p>
+          <p class="card-text text-truncate" style="max-width: 100%;">{{ post.description }}</p>
           <a href="{{ site.baseurl }}{{ post.url }}" class="card-link stretched-link">Continue reading</a>
         </div>
       </div>

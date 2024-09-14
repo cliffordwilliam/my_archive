@@ -22,9 +22,6 @@ url: "https://cliffordwilliam.github.io"
 # place folder name if the site is served in a subfolder
 baseurl: "/my_archive"
 
-excerpt_separator: "<!--more-->"
-
+# custom
 author_name: "Clifford William"
 author_email: ccliffordwilliam@gmail.com
-
-paginate: 5
