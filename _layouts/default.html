@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/atom-one-dark.min.css">
   <script src="{{ site.baseurl }}/assets/js/main.js" defer></script>
   <script src="{{ site.baseurl }}/assets/js/color_mode_toggler.js" defer></script>
-  <script src="{{ site.baseurl }}/assets/js/highlight.min.js" defer></script>
-  <script src="{{ site.baseurl }}/assets/js/highlightjs-copy.min.js" defer></script>
-  <script src="{{ site.baseurl }}/assets/js/bash.min.js" defer></script>
-  <script src="{{ site.baseurl }}/assets/js/yaml.min.js" defer></script>
+  <script src="{{ site.baseurl }}/assets/js/highlight.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/highlightjs-copy.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/bash.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/yaml.min.js"></script>
 </head>
 
 <body>
@@ -139,9 +139,15 @@
     </div>
   </footer>
   <script>
-    // Highlight code snippet.
-    hljs.addPlugin(new CopyButtonPlugin());
-    hljs.highlightAll();
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof hljs !== 'undefined') {
+        // Highlight code snippet.
+        hljs.addPlugin(new CopyButtonPlugin());
+        hljs.highlightAll();
+      } else {
+        console.error('hljs is not defined');
+      }
+    });
   </script>
 </body>
 
