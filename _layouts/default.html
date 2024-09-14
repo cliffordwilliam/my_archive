@@ -98,17 +98,25 @@
             {{ page.description }}
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a class="btn btn-primary btn-sm px-4 me-md-2" href="{{ site.github.repository_url }}" role="button">View on
-              GitHub</a>
-            <a class="btn btn-outline-secondary btn-sm px-4 me-md-2" href="{{ site.github.zip_url }}"
-              role="button">Download
-              .zip</a>
-            <a class="btn btn-outline-secondary btn-sm px-4" href="{{ site.github.tar_url }}" role="button">Download
-              .tar.gz</a>
+            <a href="{{ site.github.repository_url }}" role="button"
+              class="btn btn-primary btn-lg px-4 me-md-2">GitHub</a>
+            <div class="dropdown">
+              <button class="btn btn-outline-secondary btn-lg px-4 dropdown-toggle" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Download</button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="{{ site.github.zip_url }}" role="button">Download
+                    .zip</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ site.github.tar_url }}" role="button">Download
+                    .tar.gz</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </header>
   <main class="container">
     <article>
