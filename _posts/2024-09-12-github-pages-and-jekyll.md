@@ -76,6 +76,16 @@ This creates a new commit (even if unchanged) and force pushes it, replacing the
 
 TODO
 
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 ## Important things
 
 - GitHub Pages is available for public repos with GitHub Free (and the free one for organizations)
