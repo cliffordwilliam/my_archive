@@ -48,8 +48,7 @@ You can change the publishing source to a different branch dedicated for this si
 
 Edit the `_config.yml` like this:
 
-```yml
-# if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+<pre><code># if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 domain: "cliffordwilliam.github.io"
 
 # the base hostname and protocol for your site, e.g. http://example.com
@@ -57,7 +56,7 @@ url: "https://cliffordwilliam.github.io"
 
 # place folder name if the site is served in a subfolder
 baseurl: "/my_archive"
-```
+</code></pre>
 
 In the above, since we use neither user or organization repo, then we need to set the baseurl. We will use that property whenever we want to declare hyperlinks.
 
@@ -65,10 +64,9 @@ You can commit and push. Here we want to first setup this remote repo to publish
 
 In the rare occasion that the build fail, re running the build usually puts you in a indefinite queue (you are stuck in limbo since you do not have permission to stop the queue). When that happens you want to do the following:
 
-```bash
-git commit --amend --no-edit
+<pre><code>git commit --amend --no-edit
 git push --force-with-lease
-```
+</code></pre>
 
 That will **create a new commit (even if you did not change anything)**. Then the next one force a push where it **overwrite the old commit**.
 
