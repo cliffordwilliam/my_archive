@@ -5,15 +5,9 @@
   {% include meta.html %}
   <title>{{ page.title }} - {{ site.author_name }}</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pygments-256-jungle.css">
-  <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/highlightjs-copy.min.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/atom-one-dark.min.css"> -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pygments-darcula.css">
   <script src="{{ site.baseurl }}/assets/js/main.js" defer></script>
   <script src="{{ site.baseurl }}/assets/js/color_mode_toggler.js" defer></script>
-  <!-- <script src="{{ site.baseurl }}/assets/js/highlight.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/highlightjs-copy.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/bash.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/yaml.min.js"></script> -->
 </head>
 
 <body>
@@ -139,17 +133,6 @@
       <span class="mb-3 mb-md-0 text-body-secondary">&copy; {{ site.author_name }}</span>
     </div>
   </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      if (typeof hljs !== 'undefined') {
-        // Highlight code snippet.
-        hljs.addPlugin(new CopyButtonPlugin());
-        hljs.highlightAll();
-      } else {
-        console.error('hljs is not defined');
-      }
-    });
-  </script>
 </body>
 
 </html>

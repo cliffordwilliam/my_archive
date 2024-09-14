@@ -76,6 +76,15 @@ This creates a new commit (even if unchanged) and force pushes it, replacing the
 
 TODO
 
+post that tried the right way
+https://talk.jekyllrb.com/t/rouge-code-snippet-highlighting-not-working/121
+
+post that tried the right way
+https://talk.jekyllrb.com/t/canonical-way-to-use-syntax-highlighting-of-code-blocks/4645
+
+link for css for highlight
+https://frankindev.com/2017/03/18/syntax-highlight-with-rouge-in-jekyll/
+
 ## Important Considerations
 
 - **Availability**: GitHub Pages is accessible for public repositories with GitHub Free, including the free tier for organizations.
