@@ -76,26 +76,16 @@ This creates a new commit (even if unchanged) and force pushes it, replacing the
 
 TODO
 
-Here is a simple flow chart:
+## Important Considerations
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
-## Important things
-
-- GitHub Pages is available for public repos with GitHub Free (and the free one for organizations)
-- Bypass Jekyll build with .nojekyll file in root
-- Jekyll is not officially supported for Windows
-- Organization owner can restrict GitHub Pages publications
-- There are some settings that cannot be edited when using GitHub Pages Jekyll
-- There are folders and files that Jekyll does not build based on their names too (you can force it if you want)
-- When using GitHub with Jekyll, you get `site.github` property, access your repo metadata with it
-- Only some themes are supported with GitHub Pages Jekyll
-- GitHub Pages Jekyll has some plugins out of the box
-- Name your repo (all lower case in kebab case), you can either create a user or organization site like `<user>.github.io` or `<organization>.github.io`
-- If build fail and it says invalid token (even if you do not use that), then amend commit and force push it to force a new build queue
+- **Availability**: GitHub Pages is accessible for public repositories with GitHub Free, including the free tier for organizations.
+- **Bypassing Jekyll**: To bypass the Jekyll build process, place a `.nojekyll` file in the root of your repository.
+- **Windows Support**: Jekyll is not officially supported on Windows, so you don’t need to set it up locally if using GitHub Pages.
+- **Restrictions**: Organization owners can restrict GitHub Pages publications.
+- **Configuration Limitations**: Some settings cannot be modified when using GitHub Pages’ default Jekyll setup.
+- **Ignored Files**: Jekyll ignores certain folders and files based on their names, though you can force their inclusion if necessary.
+- **Metadata**: When using GitHub with Jekyll, the `site.github` property provides access to your repository’s metadata.
+- **Themes**: Only certain themes are supported with GitHub Pages’ Jekyll integration.
+- **Plugins**: GitHub Pages’ Jekyll setup includes some built-in plugins.
+- **Repository Naming**: Name your repository using lowercase letters and kebab-case (e.g., `<user>.github.io` or `<organization>.github.io`). You can also use other names for personal repositories.
+- **Build Failures**: If the build fails and reports an invalid token (even if you haven't used one), amend your commit and force push to trigger a new build queue.
