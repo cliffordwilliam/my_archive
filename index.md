@@ -13,11 +13,11 @@ You can explore my [blog]({{ site.baseurl }}{{ site.data.navigation.navigations[
 {% assign specific_post = site.posts | where: "title", "GitHub Pages and Jekyll" | first %}
 To know how this site was built, [visit GitHub Pages and Jekyll blog]({{ site.baseurl }}{{ specific_post.url }}) to learn how to make one yourself for free.
 
-All vector illustrations are from [undraw.co](https://undraw.co/). I like it because vectors scales on any size and also undraw has so many of illustrations to use. Images are important for associations at least for my brain, it helps me remember things easily when there is an image associated with a writing. The CSS for this whole site is from Bootstrap, I can make my own css but I do not want to spend extra time figuring out aria and cross browser compatibility so thus why I use it.
+All vector illustrations on this site are courtesy of undraw.co. I love using vector images because they scale perfectly to any size, and Undraw has a vast collection of illustrations to choose from. Images help me associate ideas better—especially when it comes to recalling information. For the site’s styling, I’m using Bootstrap. While I could design my own CSS, Bootstrap saves me time by handling accessibility and cross-browser compatibility, which is why I prefer it. The design might be simple, but as long as it’s clean and easy to read, it works for me.
 
 ## Latest post
 
-Below is the latest post here.
+Here's the most recent blog post:
 
 <div class="card w-100">
     <div class="card-header">
