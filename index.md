@@ -20,6 +20,7 @@ All vector illustrations on this site are courtesy of [undraw.co](https://undraw
 Here's the most recent blog post:
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
-    {% assign latest_post = site.posts.first %}
-    {% include card.html post=latest_post %}
+  {% for post in site.posts limit:1 %}
+  {% include card.html post=post %}
+  {% endfor %}
 </div>
