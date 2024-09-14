@@ -1,7 +1,7 @@
 ---
-**Title**: "Home"  
-**Description**: "Welcome! This archive contains the knowledge I've gathered throughout my life."  
-**Thumbnail**: "undraw_undraw_undraw_undraw_undraw_website_o7n3_bucy_30uo_-1-_d6br_0qfo.svg"
+title: "Home"  
+description: "Welcome! This archive contains the knowledge I've gathered throughout my life."  
+thumbnail: "undraw_undraw_undraw_undraw_undraw_website_o7n3_bucy_30uo_-1-_d6br_0qfo.svg"
 ---
 
 ## Introduction
