@@ -2,4 +2,8 @@
 title: "About"
 ---
 
-[email@domain.com](mailto:{{ site.author_email }})
+I am Clifford William. A full-stack developer. I like to study and collect useful information.
+
+## Contact me
+
+[{{ site.author_email }}](mailto:{{ site.author_email }})
