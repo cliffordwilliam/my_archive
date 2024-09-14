@@ -10,6 +10,6 @@ tags:
 
 ## Introduction
 
-Complete guide is <a href="https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll" target="_blank">here</a>. Summary, GitHub Pages is powered by Jekyll. Follow Jekyll opinionated way to work locally, on git push, by default GitHub runs Jekyll build process that turns your repo content into only HTML files. Jekyll build process does the manual repetitive HTML writing for you, you use Jekyll opinionated features to define layout once or store variables so you do not write them multiple times in multiple pages.
+Everything you need to know is from <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll" target="_blank">here</a>. Summary, GitHub Pages is powered by Jekyll. Follow Jekyll opinionated way to work locally, on git push, by default GitHub runs Jekyll build process that turns your repo content into only HTML files. Jekyll build process does the manual repetitive HTML writing for you, you use Jekyll opinionated features to define layout once or store variables so you do not write them multiple times in multiple pages.
 
 Todo, mention what I did here.

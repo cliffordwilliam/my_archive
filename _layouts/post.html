@@ -2,6 +2,18 @@
 layout: default
 ---
 
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{{site.data.navigation.navigations[1].url}}">Blog</a>
+        </li>
+        {% assign item = site.navigations | where: "url", page.url | first %}
+        <li class="breadcrumb-item active" aria-current="page">
+            {{ item.title }}
+        </li>
+    </ol>
+</nav>
+
 <h2>Post Metadata</h2>
 <p class="text-body-secondary">Written on {{ page.date | date: "%B %e, %Y" }}</p>
 <p class="text-body-secondary">Reading time {{ page.reading_time }}</p>

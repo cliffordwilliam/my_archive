@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        {% assign item = site.data.navigation.navigations | where: "url", page.url | first %}
+        <li class="breadcrumb-item active" aria-current="page">
+            {{ item.title }}
+        </li>
+    </ol>
+</nav>
+
+{{ content }}
