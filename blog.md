@@ -21,6 +21,11 @@ Filter and pagination are not supported for this site, use the `ctrl + f` to fin
           <p class="card-text text-truncate" style="max-width: 100%;">{{ post.description }}</p>
           <a href="{{ site.baseurl }}{{ post.url }}" class="card-link stretched-link">Continue reading</a>
         </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
       </div>
     </div>
   {% endfor %}
