@@ -8,8 +8,8 @@ Below is a list of posts, arranged from the most recent to the oldest. Paginatio
   {% for post in site.posts %}
     <div class="col">
       <div class="card h-100">
-        <div class="p-1">
-          <img class="card-img-top" src="{{ site.baseurl }}/assets/svgs/{{ post.thumbnail }}" alt="{{ post.thumbnail }}">
+        <div class="p-4">
+          <img class="card-img-top" src="{{ site.baseurl }}/assets/svgs/{{ post.thumbnail }}" alt="{{ post.thumbnail }}" style="width: 286px; height: 180px; object-fit: cover;">
         </div>
         <div class="card-body border-top">
           <h2 class="h5 card-title">{{ post.title }}</h2>
