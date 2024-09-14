@@ -22,11 +22,13 @@ Filter and pagination are not supported for this site, use the `ctrl + f` to fin
         </div>
         <ul class="list-group list-group-flush">
           {% for tag in page.tags %}
-            <li class="list-group-item">{{ tag }}</a>
+            <li class="list-group-item">
+              <a class="card-link" href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
+            </li>
           {% endfor %}
         </ul>
         <div class="card-body">
-          <a href="{{ site.baseurl }}{{ post.url }}" class="card-link stretched-link">Continue reading</a>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="card-link">Continue reading</a>
         </div>
       </div>
     </div>
