@@ -19,7 +19,6 @@ All vector illustrations on this site are courtesy of [undraw.co](https://undraw
 
 Here's the most recent blog post:
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    {% assign latest_post = site.posts.first %}
-    {% include card.html post=latest_post %}
-</div>
+{% assign latest_post = site.posts | first %}
+{% assign latest_post_list = latest_post | push: latest_post %}
+{% include card.html posts=latest_post_list %}
