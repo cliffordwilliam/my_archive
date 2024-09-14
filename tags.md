@@ -11,6 +11,7 @@ To explore each post, click the **Continue reading** button below the preview. S
 {% for tag in site.tags %}
   <div class="py-5">
     <h3 id="{{ tag[0] | slugize }}" class="pb-2 border-bottom">{{ tag[0] }}</h3>
-    {% include card.html posts=tag[1] %}
+    {% assign second_tag = tag[1] %}
+    {% include card.html posts=second_tag %}
   </div>
 {% endfor %}
