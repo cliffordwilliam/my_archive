@@ -6,7 +6,7 @@ thumbnail: "undraw_choose_color_uotg.svg"
 
 ## Tags
 
-To explore each post, click the **Continue reading** button below the preview. Since pagination isn't available on GitHub Pages, you can quickly find specific posts by using `ctrl + f` to search for keywords. Alternatively, visit the [tags page]({{ site.baseurl }}{{ site.data.navigation.navigations[2].url }}) to filter posts by tags and browse them from newest to oldest.
+To explore each post, click the **Continue reading** button below the preview. Since pagination isn't available on GitHub Pages, you can quickly find specific posts by using <kbd>Ctrl</kbd> + <kbd>F</kbd> to search for keywords. Alternatively, visit the [tags page]({{ site.baseurl }}{{ site.data.navigation.navigations[2].url }}) to filter posts by tags and browse them from newest to oldest.
 
 {% for tag in site.tags %}
   <div class="py-5">
