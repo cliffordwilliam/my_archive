@@ -2,8 +2,8 @@ navigations:
   - title: Home
     url: "/"
   
-  - title: Blog
-    url: "/blog.html"
+  - title: Blogs
+    url: "/blogs.html"
   
   - title: Tags
     url: "/tags.html"
