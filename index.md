@@ -19,28 +19,6 @@ All vector illustrations on this site are courtesy of [undraw.co](https://undraw
 
 Here's the most recent blog post:
 
-<div class="card w-100">
-    <div class="card-header">
-        New
-    </div>
-    <div class="p-4">
-        <img class="card-img-top" src="{{ site.baseurl }}/assets/svgs/{{ site.posts.first.thumbnail }}" alt="{{ site.posts.first.thumbnail }}"
-        style="width: 100%; height: 180px; object-fit: cover;">
-    </div>
-    <div class="card-body">
-        <h2 class="h5 card-title">{{ site.posts.first.title }}</h2>
-        <h3 class="h6 card-subtitle mb-2 text-body-secondary">{{ site.posts.first.date | date: "%B %d, %Y" }}</h3>
-        <p class="card-text text-truncate" style="max-width: 100%;">{{ site.posts.first.description }}</p>
-        <a href="{{ site.baseurl }}{{ site.posts.first.url }}" class="btn btn-primary">Continue reading</a>
-    </div>
-    <ul class="list-group list-group-flush">
-      <div class="card-header">
-        Tags
-      </div>
-      {% for tag in site.posts.first.tags %}
-      <li class="list-group-item">
-        <a class="card-link" href="{{site.baseurl}}/tags.html#{{tag|slugize}}">{{tag}}</a>
-      </li>
-      {% endfor %}
-    </ul>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  {% include card.html post=site.posts.first %}
 </div>
