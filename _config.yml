@@ -26,3 +26,9 @@ baseurl: "/my_archive"
 author_name: "Clifford William"
 author_email: ccliffordwilliam@gmail.com
 author_linkedin: https://www.linkedin.com/in/clifford-william-05bb4220b/
+
+# highlight
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
