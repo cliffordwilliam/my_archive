@@ -6,7 +6,9 @@ thumbnail: "undraw_undraw_posts_givd_-1-_5vi7.svg"
 
 ## Blog posts
 
-To explore each post, click the **Continue reading** button below the preview. Since pagination isn't available on GitHub Pages, instead you can quickly find specific posts by using <kbd>Ctrl</kbd> + <kbd>F</kbd> to search for keywords. Alternatively, visit the [tags]({{ site.baseurl }}{% link tags.md %}) to see all posts from newest to oldest organized by their tags.
+Below is a list of all posts arranged from the most recent to the oldest. Each post is displayed as a card. To read a post, click **Continue reading** on the card. You can also filter posts by clicking on any of the card **tags**. 
+
+Due to GitHub Pages and Jekyll limitations, pagination is not available. To find a specific topic, use <kbd>Ctrl</kbd> + <kbd>F</kbd> to search within the page. Alternatively, you can visit the [tags]({{ site.baseurl }}{% link tags.md %}) page to see all posts, organized from newest to oldest, by their tags.
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
   {% for post in site.posts %}
