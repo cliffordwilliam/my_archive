@@ -75,6 +75,8 @@ This creates a new commit (even if unchanged) and force pushes it, replacing the
 
 Jekyll has two main types of content, **pages** and **posts**.
 
+Before starting please read the following first.
+
 Pages URLs are `YOUR-SITE-URL/about` or `url/baseurl/about` if you use named repo not user or organization. Refer to [pages](https://jekyllrb.com/docs/pages/){:target="_blank"} in Jekyll. Create pages in root dir. You can use explicit URL for pages if you do not want it to follow how you organize it (you can organize the pages with folders.) in root with permalink but we do not use that in this project.
 
 By default if you use user or organization repo it will look like the ones below, other wise there is the baseurl first before the page resource `url/baseurl/about`.
@@ -111,7 +113,9 @@ Here are predefined for posts only:
 - **`category` `categories`**: This is like placing them in folders, but here you set it explicitly. Specified as a YAML list or a space-separated string. Alters URL path.
 - **`tags`**: Same like the above but does not alter their URL.
 
-You create your own layout in `_layouts`, write them in HTML.
+You create your own layout in `_layouts`, write them in HTML. We will get into that later.
+
+Here is an example to how you use the Front Matter in Liquid.
 
 ```html
 ---
@@ -121,7 +125,26 @@ food: Pizza
 <h1>{{ page.food }}</h1>
 ```
 
-Here is an example to how you use the Front Matter in Liquid.
+If you had read all the above, now you can create your first post in `_posts` dir.
+
+```markdown
+---
+layout: post
+title:  "Welcome to Jekyll!"
+---
+
+# Welcome
+
+**Hello world**, this is my first Jekyll blog post.
+
+I hope you like it!
+```
+
+{% highlight ruby mark_lines="1 2" %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
 
 Had to edit the css that i got here to add padding else wont work even if you link another css after this one
 
