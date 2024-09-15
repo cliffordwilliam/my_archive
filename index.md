@@ -6,13 +6,13 @@ thumbnail: "undraw_undraw_undraw_undraw_undraw_website_o7n3_bucy_30uo_-1-_d6br_0
 
 ## Introduction
 
-Welcome to my personal knowledge archive, a place where I store and share everything I’ve learned over the years. This site serves as a central hub for all the valuable information I've discovered online and in life. Instead of hunting for references scattered across the web, I’ve gathered and reworded them here for quick and easy access.
+Welcome to my personal knowledge archive, where I store and share everything I’ve learned over the years. This site serves as a central hub for the valuable information I’ve gathered throughout my life. Instead of tracking down scattered references, I’ve curated and reworded them here for quick and easy access. The content is organized into posts, much like a blog. I chose this structure because it’s simple and effective for managing content.
 
-You can explore my [blog]({{ site.baseurl }}{% link blog.md %}) to dive into the complete collection of posts or browse the [tags]({{ site.baseurl }}{% link tags.md %}) to see topics organized by category. If you’d like to know more about me, feel free to visit the [about]({{ site.baseurl }}{% link about.md %}).
+You can explore my [blog]({{ site.baseurl }}{% link blog.md %}) to dive into the complete collection of posts or browse the [tags]({{ site.baseurl }}{% link tags.md %}) to find posts by topic. If you'd like to know more about me or the site, feel free to visit the [about]({{ site.baseurl }}{% link about.md %}) page.
 
-To know how this site was built, [visit GitHub Pages and Jekyll blog]({{ site.baseurl }}{% post_url 2024-09-12-github-pages-and-jekyll %}) to learn how to make one yourself for free.
+I'm really happy with how this site turned out. I’ve even written a guide on how to build a similar site in my [GitHub Pages and Jekyll post]({{ site.baseurl }}{% post_url 2024-09-12-github-pages-and-jekyll %}). The guide is accessible to everyone, even those without a programming background. One of the great benefits of building a site like this is the freedom to customize everything—the structure, appearance, and functionality for free, with optional costs like domain names or additional services.
 
-All vector illustrations on this site are courtesy of [undraw.co](https://undraw.co/). I love using vector images because they scale perfectly to any size, and Undraw has a vast collection of illustrations to choose from. Images help me associate ideas better—especially when it comes to recalling information. For the site’s styling, I’m using [Bootstrap](https://getbootstrap.com/). While I could design my own CSS, Bootstrap saves me time by handling accessibility and cross-browser compatibility, which is why I prefer it. The design might be simple, but as long as it’s clean and easy to read, it works for me.
+A quick overview of the site: it’s powered by Jekyll on GitHub Pages, which comes with a few limitations, such as no pagination and no option to highlight specific lines in code snippets. The vector illustrations are from [unDraw](https://undraw.co/), which I love because vector images scale perfectly without losing quality. Most of the CSS is from [Bootstrap](https://getbootstrap.com/), which makes handling cross-browser compatibility and accessibility easier. I’ve made a few minor tweaks to improve the user experience, but nothing major. While the design is minimal, I believe it keeps everything clean and functional.
 
 <h2 class="mt-5">Latest post</h2>
 
