@@ -19,7 +19,8 @@ layout: default
 <div class="d-flex flex-column flex-md-row-reverse">
     <div class="sticky-md-top flex-shrink-0 align-self-md-start ms-md-5">
         <h2 class="mt-5">Contents</h2>
-        {% include toc.html html=content class="list-group list-group-flush" item_class="list-group-item" %}
+        {% include toc.html html=content submenu_class="list-group list-group-flush" class="list-group list-group-flush"
+        item_class="list-group-item" %}
     </div>
     <div id="post-content-container" class="flex-grow-1">
         {{ content }}
