@@ -16,9 +16,13 @@ layout: default
 <h2>Post Metadata</h2>
 <p class="text-body-secondary">Written on {{ page.date | date: "%B %e, %Y" }}</p>
 
-<h2>Contents</h2>
-{% include toc.html html=content %}
+<div class="d-flex flex-column flex-md-row-reverse">
+    <div class="sticky-md-top">
+        <h2>Contents</h2>
+        {% include toc.html html=content %}
+    </div>
 
-<div id="post-content-container">
-    {{ content }}
+    <div id="post-content-container" class="flex-grow-1">
+        {{ content }}
+    </div>
 </div>
