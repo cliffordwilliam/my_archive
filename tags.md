@@ -12,7 +12,7 @@ Due to GitHub Pages and Jekyll limitations, pagination is not available. To find
 
 {% for tag in site.tags %}
   <div class="py-5">
-    <h3 id="{{ tag[0] | slugize }}" class="pb-2 border-bottom">{{ tag[0] }}</h3>
+    <h3 id="{{ tag[0] | slugize }}" class="pb-2 border-bottom mt-0">{{ tag[0] }}</h3>
     <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
       {% for post in tag[1] %}
       {% include card.html post=post %}
