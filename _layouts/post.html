@@ -16,13 +16,16 @@ layout: default
 <h2>Post Metadata</h2>
 <p class="text-body-secondary">Written on {{ page.date | date: "%B %e, %Y" }}</p>
 
-<div class="d-flex flex-column flex-md-row-reverse">
-    <div class="sticky-md-top flex-shrink-0 align-self-md-start me-md-5">
-        <h2 class="mt-5">Contents</h2>
-        {% include toc.html html=content class="list-group list-group-flush border-start" item_class="list-group-item"
-        submenu_class="list-group list-group-flush" anchor_class="link-body-emphasis link-underline-opacity-0" %}
+<div class="grid gap-3">
+    <div class="g-col-4 order-md-2">
+        <div class="sticky-md-top">
+            <h2 class="mt-5">Contents</h2>
+            {% include toc.html html=content class="list-group list-group-flush border-start"
+            item_class="list-group-item"
+            submenu_class="list-group list-group-flush" anchor_class="link-body-emphasis link-underline-opacity-0" %}
+        </div>
     </div>
-    <div id="post-content-container" class="flex-grow-1">
+    <div id="post-content-container" class="g-col-8 order-md-1">
         {{ content }}
     </div>
 </div>
