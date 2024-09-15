@@ -1,6 +1,6 @@
 ---
 title: Blog
-description: "Browse all posts, from latest to oldest. Note: This site uses GitHub Pages and Jekyll pagination isn't supported on GitHub Pages."
+description: "Browse all posts, from latest to oldest."
 thumbnail: "undraw_undraw_posts_givd_-1-_5vi7.svg"
 ---
 
