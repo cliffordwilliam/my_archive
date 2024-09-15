@@ -44,3 +44,7 @@ h6+h5,
 h6+h6 {
     margin-top: 0rem;
 }
+
+html {
+    scroll-behavior: auto !important;
+}
