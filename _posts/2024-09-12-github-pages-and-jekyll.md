@@ -99,6 +99,8 @@ YEAR-MONTH-DAY-title.MARKUP
 
 The content of the Markdown should **start with Front Matter**. Refer to [Front Matter](https://jekyllrb.com/docs/front-matter/){:target="_blank"} in Jekyll. It is YAML within triple-dashed lines. Inside you can declare custom variables for the Markdown post. There are predefined ones too. You use Liquid tags to access these variables in layout when you want to render them. Just like in other templating languages. Front Matter is optional but leave the triple-dashes there, it tells Jekyll to process the file and good for CSS and RSS feeds.
 
+Note that, with UTF-8 encoding, do not use `BOM` header characters.
+
 The URL for posts by default are in `url/year/month/day/title.html` or `url/baseurl/year/month/day/title.html`. Use permalink to modify it.
 
 Here are the predefined properties of a Markdown:
@@ -140,11 +142,7 @@ title:  "Welcome to Jekyll!"
 I hope you like it!
 ```
 
-{% highlight ruby mark_lines="1 2" %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
+We will be using `post_url` and `link` Liquid tags to create links later. **Since Jekyll 4.0 , you don’t need to prepend link and post_url tags with site.baseurl**, **but GitHub pages has 3.10.0**. So keep that in mind as your read the doc. I know that from here, [GitHub pages version](https://pages.github.com/versions/). There are limitations if you use GitHub Pages Jekyll builder, so bear that in mind. Like that is why pagination and code snippet highlighting does not work in this site unless I decided to use another Jekyll builder either locally or other server that has it.
 
 Had to edit the css that i got here to add padding else wont work even if you link another css after this one
 
