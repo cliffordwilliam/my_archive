@@ -1,12 +1,14 @@
 ---
 title: Tags
-description: "Posts here are organized by their tags, arranged from latest to olders. Note: This site uses GitHub Pages and Jekyll pagination isn't supported on GitHub Pages."
+description: "Browse all posts organized by their tags, from latest oldest."
 thumbnail: "undraw_choose_color_uotg.svg"
 ---
 
 ## Tags
 
-To explore each post, click the **Continue reading** button below the preview. Since pagination isn't available on GitHub Pages, you can quickly find specific posts by using <kbd>Ctrl</kbd> + <kbd>F</kbd> to search for keywords. Alternatively, visit the [blog]({{ site.baseurl }}{% link blog.md %}) to see all posts from newest to oldest.
+Below is a list of all posts organized by their tags, arranged from the most recent to the oldest. Each post is displayed as a card, To read a post, click **Continue reading** on the card. You can also filter posts by clicking on any of the card **tags**.
+
+Due to GitHub Pages and Jekyll limitations, pagination is not available. To find a specific topic, use <kbd>Ctrl</kbd> + <kbd>F</kbd> to search within the page. Alternatively, you can visit the [blog]({{ site.baseurl }}{% link blog.md %}) page to see all posts, organized from newest to oldest, by their tags.
 
 {% for tag in site.tags %}
   <div class="py-5">
