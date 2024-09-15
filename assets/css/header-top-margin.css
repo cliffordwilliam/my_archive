@@ -48,3 +48,7 @@ h6+h6 {
 html {
     scroll-behavior: auto !important;
 }
+
+pre {
+    font-size: 1rem !important;
+}
