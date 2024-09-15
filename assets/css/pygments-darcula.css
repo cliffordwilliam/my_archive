@@ -1,6 +1,6 @@
 /*! Darcula theme; https://github.com/alem0lars/vim-colorscheme-darcula */
 .highlight, .highlight pre, .highlight table { background: #2b2b2b !important; color: #ffffff !important; margin-bottom: 0rem !important; }
-pre.highlight { padding: 1rem !important; margin-bottom: 0rem !important; }
+pre.highlight { padding: 1rem !important; margin-bottom: 0rem !important;  }
 pre.lineno { margin-right: .8em !important;, margin-bottom: 0rem !important; border-right: 1px solid #999 !important; padding-right: .8em !important; }
 #post-content-container div.highlighter-rouge { margin-bottom: 1rem !important; }
 .highlight .hll { background-color: #ffffcc !important; }
