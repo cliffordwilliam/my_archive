@@ -2,7 +2,6 @@
 title: "GitHub Pages and Jekyll"
 thumbnail: undraw_website_5bo8.svg
 description: "Create static site with GitHub Pages and Jekyll."
-reading_time: "0:22 mins:secs"
 tags: 
   - "Web development"
 ---
@@ -143,6 +142,153 @@ I hope you like it!
 ```
 
 We will be using `post_url` and `link` Liquid tags to create links later. **Since Jekyll 4.0 , you don’t need to prepend link and post_url tags with site.baseurl**, **but GitHub pages has 3.10.0**. So keep that in mind as your read the doc. I know that from here, [GitHub pages version](https://pages.github.com/versions/). There are limitations if you use GitHub Pages Jekyll builder, so bear that in mind. Like that is why pagination and code snippet highlighting does not work in this site unless I decided to use another Jekyll builder either locally or other server that has it.
+
+Here is how you edit the default layout:
+
+```yml
+# default layouts
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "_posts"
+      type: "posts" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "post" # overrides previous default layout
+```
+
+The one above will set default, so that you do not have to repeatedly write the same thing over and over again in Front Matter. Set site-wide config in `defaults` key in `_config.yml` in project root dir. `defaults` holds an array of scope / values pairs. **Define what defaults should be set for a particular file path or file type**
+
+Since path is empty, then the value scope will be for **all files**. **This means it applies to css too**. But since we scope the `type` to posts. We have `pages`, `posts`, `drafts` or any collection. `type` is optional but path is `required`, **path is from project dir root**.
+
+There is a feaure called `collection` but we will not cover that here. Same goes with glob pattern as it works for `3.7.0`.
+
+Just like CSS there is precedence, so say you apply a layout for all files, but then you set a layout for a specific path then that one takes precedence.
+
+```yml
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "my-site" # global for all pages
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project" # takes precedence since its more specific in projects dir
+      author: "Mr. Hyde"
+```
+
+You can overwrite the default by explicitly defining them in the file Front Matter.
+
+```yml
+# In _config.yml
+...
+defaults:
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project"
+      author: "Mr. Hyde"
+      category: "project"
+...
+```
+
+```yml
+# In projects/foo_project.md
+---
+author: "John Smith"
+layout: "foobar"
+---
+The post text goes here...
+```
+
+So in the above the page explicit values takes precedence.
+
+---
+
+Now that you know Front Matter, where we can attach metadata to posts. We can use Liquid to loop over the `_posts` files and get their metadata like this:
+
+```html
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+```
+
+But keep in mind since we are not using user or organization we need to append the baseurl.
+
+```html
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+```
+
+Also we call the tokens like `for` as Liquid tags. Same goes for the `link` and `post_url`. Refer to [this](https://jekyllrb.com/docs/liquid/). Or the official [doc](https://shopify.github.io/liquid/).
+
+Notice, `site.posts` and `page`. Using `page` refer to current `page` and you get its Front Matter.
+
+Tags feature, we will not discuss the categories. Look that up yourself. Tags are predefined property of a post. Define it like this:
+
+```yml
+tags: 
+  - "Web development"
+```
+
+That way you can define 1 or multiple easily. This allow white spaces. Issues with how the doc wants it is as follow:
+
+```yml
+tag: classic hollywood
+# evaluates to
+"classic hollywood"
+
+tags: classic hollywood
+# evaluates to
+["classic", "hollywood"]
+
+# How to do white spaces with the above?
+
+# Both ways results in storage into the site.tags anyways
+```
+
+Each item is an array of 2 items, doc mentions that the first is the name while the second is the posts. So you can do a filter. Filter posts by their tags with nested for loop like so:
+
+```html
+{% for tag in site.tags %}
+  <h3>{{ tag[0] }}</h3>
+  <ul>
+    {% for post in tag[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+```
+
+---
+
+Okay so at this point you know how to make pages and posts.
+
+There is another feature called excerpt, we will instead attach excerpt to the Front Matter for flexibility since for now it grabs the title. So the only solution is to add it on top of the heading. Also I think it is better for any page to have some sort of excerpt anyways. So just create a Front Matter for it. Draft is not covered in this guide too, so read on excerpt and draft yourself.
+
+
+TODO: Re write this later I too tired, but this should cover all there is, just need to discuss layout and bootstrap.
 
 Had to edit the css that i got here to add padding else wont work even if you link another css after this one
 
