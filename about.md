@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "I am Clifford William, a full-stack developer passionate about learning and organizing information."
+description: "I am Clifford William, a full-stack developer passionate about learning new things."
 thumbnail: "undraw_drink_coffee_v3au.svg"
 ---
 
@@ -12,7 +12,7 @@ GitHub Pages, combined with Jekyll, provides the perfect solution. It allows me 
 
 <h2 class="mt-5">Who Am I</h2>
 
-I’m Clifford William, a full-stack web developer from Indonesia. I’m passionate about learning, collecting information, and sharing knowledge. I strive to continuously improve, not only to support myself and my family through freelance work but also to contribute meaningfully to society.
+I’m Clifford William, a full-stack web developer from Indonesia. I’m passionate about learning, collecting information, and sharing knowledge. I strive to continuously improve, not only to support myself and my family through work but also to contribute meaningfully to society.
 
 In my free time, I’m working on a passion project—developing a video game that I plan to release in the future. I hope others will enjoy playing it as much as I’ve enjoyed creating it.
 
