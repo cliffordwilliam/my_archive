@@ -8,7 +8,7 @@ thumbnail: "undraw_undraw_undraw_undraw_undraw_website_o7n3_bucy_30uo_-1-_d6br_0
 
 Welcome to my personal knowledge archive, a place where I store and share everything I’ve learned over the years. This site serves as a central hub for all the valuable information I've discovered online and in life. Instead of hunting for references scattered across the web, I’ve gathered and reworded them here for quick and easy access.
 
-{{ site.baseurl }}{% link _posts/2024-09-12-first-post.md %}
+{{ site.baseurl }}{% link about.md %}
 
 {{ site.baseurl }}{% post_url 2024-09-12-first-post %}
 
