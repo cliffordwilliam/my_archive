@@ -1,6 +1,5 @@
 ---
 title: "My First Post"
-date: 2024-09-12 14:30:00 -0000
 thumbnail: undraw_post_ahef.svg
 description: "Hello world, this is my first Jekyll blog post."
 reading_time: "0:05 mins:secs"
