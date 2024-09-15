@@ -12,7 +12,7 @@ Welcome to my personal knowledge archive, a place where I store and share everyt
 
 {{ site.baseurl }}{% post_url 2024-09-12-first-post %}
 
-You can explore my [blog]({{ site.baseurl }}{{ site.data.navigation.navigations[1].url }}) to dive into the complete collection of posts or browse the [tags]({{ site.baseurl }}{{ site.data.navigation.navigations[2].url }}) to see topics organized by category. If you’d like to know more about me, feel free to visit the [about page]({{ site.baseurl }}{{ site.data.navigation.navigations[3].url }}).
+You can explore my [blog]({{ site.baseurl }}{% link about.md %}) to dive into the complete collection of posts or browse the [tags]({{ site.baseurl }}{{ site.data.navigation.navigations[2].url }}) to see topics organized by category. If you’d like to know more about me, feel free to visit the [about page]({{ site.baseurl }}{{ site.data.navigation.navigations[3].url }}).
 
 {% assign specific_post = site.posts | where: "title", "GitHub Pages and Jekyll" | first %}
 To know how this site was built, [visit GitHub Pages and Jekyll blog]({{ site.baseurl }}{{ specific_post.url }}) to learn how to make one yourself for free.
