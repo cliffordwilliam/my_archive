@@ -125,15 +125,17 @@
         </div>
       </div>
   </header>
-  <main class="container">
-    <div class="position-fixed z-3 bottom-0 end-0 mb-3 me-3">
-      <a class="btn btn-bd-primary" role="button" href="#">
-        Back to Top
-      </a>
+  <main class="bg-body-tertiary">
+    <div class="container">
+      <div class="position-fixed z-3 bottom-0 end-0 mb-3 me-3">
+        <a class="btn btn-bd-primary" role="button" href="#">
+          Back to Top
+        </a>
+      </div>
+      <article>
+        {{ content }}
+      </article>
     </div>
-    <article>
-      {{ content }}
-    </article>
   </main>
   <footer class="container py-3 mt-4 border-top">
     <span class="text-body-secondary">&copy; {{ site.author_name }}</span>
