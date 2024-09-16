@@ -27,16 +27,19 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-md-3">
               {% for item in site.data.navigation.navigations %}
               <li class="nav-item">
                 <a class="nav-link {% if page.url == item.url %}active{% endif %}"
                   href="{{ site.baseurl }}{{ item.url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>
-                  {% include icon_svgs/{{ item.svg }} %}
+                  <div class="d-md-none d-lg-block">
+                    {% include icon_svgs/{{ item.svg }} %}
+                  </div>
                   {{ item.title }}
                 </a>
               </li>
               {% endfor %}
+              <li class="vr d-md-none d-lg-block"></li>
               <li class="nav-item dropdown">
                 <button class="btn btn-link nav-link dropdown-toggle" id="bd-theme" type="button" aria-expanded="false"
                   data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (dark)">
@@ -44,7 +47,6 @@
                   <svg class="visually-hidden bi theme-icon-active">
                     <use href="#moon-stars-fill"></use>
                   </svg>
-                  <span id="bd-theme-text">Toggle theme</span>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text" data-bs-popper="static">
                   <li>
