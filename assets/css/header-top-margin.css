@@ -52,3 +52,11 @@ html {
 pre {
     font-size: 1rem !important;
 }
+
+.bi {
+    display: inline-block;
+    vertical-align: -.125em;
+    fill: currentcolor;
+    width: 1em;
+    height: 1em;
+}
