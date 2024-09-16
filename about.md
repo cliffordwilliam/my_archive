@@ -23,4 +23,4 @@ Outside of work, I live a simple life, dedicated to learning new things and appl
 Feel free to reach out for a chat or business inquiries:
 
 - [Email](mailto:{{ site.author_email }})
-- [LinkedIn](mailto:{{ site.author_linkedin }})
+- [LinkedIn]({{ site.author_linkedin }})
