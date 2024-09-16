@@ -82,6 +82,10 @@ You can remove employee from the "Selected Employee Table" with the "Delete Icon
 
 Added employees does not appear in Employee selector popup
 
+TODO: List down conditions when employees will not appear in the employee selector popup
+
+> **Note to self:** Employees that has transaction change will not appear in selector popup?
+
 ### Fill transaction form
 
 Steps:
