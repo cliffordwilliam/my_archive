@@ -105,3 +105,12 @@ Steps:
 4. Inside the transaction list:
     - The transaction you just assigned **populates** the drawer transaction list and its checkbox should be **ticked**
 5. Created toast appears
+
+Having 1 transaction ticked:
+- Form becomes disabled read mode, where it displays the 1 ticked transaction details
+- > **Note to self:** Will the selected employee card also show the employee assigned to the 1 ticked transaction?
+
+Having none or more than 1 ticked in transaction list:
+- Form enabled normal mode
+
+TODO: Do read mode, edit and delete. Refer to 
