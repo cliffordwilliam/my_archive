@@ -32,14 +32,14 @@
               <li class="nav-item">
                 <a class="nav-link {% if page.url == item.url %}active{% endif %}"
                   href="{{ site.baseurl }}{{ item.url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>
-                  <div class="d-md-none d-lg-block">
+                  <div class="d-md-none">
                     {% include icon_svgs/{{ item.svg }} %}
                   </div>
                   {{ item.title }}
                 </a>
               </li>
               {% endfor %}
-              <li class="vr d-md-none d-lg-block"></li>
+              <li class="vr d-md-none"></li>
               <li class="nav-item dropdown">
                 <button class="btn btn-link nav-link dropdown-toggle" id="bd-theme" type="button" aria-expanded="false"
                   data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (dark)">
