@@ -32,7 +32,7 @@
               <li class="nav-item">
                 <a class="nav-link {% if page.url == item.url %}active{% endif %}"
                   href="{{ site.baseurl }}{{ item.url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>
-                  {% include {{ item.svg }} %}
+                  {% include icon_svgs/{{ item.svg }} %}
                   {{ item.title }}
                 </a>
               </li>
