@@ -80,6 +80,8 @@ You can remove employee from the "Selected Employee Table" with the "Delete Icon
 - Click **Delete Icon** on 1 row to remove that employee row
 - Click **Delete All** on header to remove that employee row
 
+Added employees does not appear in Employee selector popup
+
 ### Fill transaction form
 
 Steps:
