@@ -1,12 +1,16 @@
 navigations:
   - title: Home
     url: "/"
+    svg: "house_door.svg"
   
   - title: Blog
     url: "/blog.html"
+    svg: "collection.svg"
   
   - title: Tags
     url: "/tags.html"
+    svg: "tags.svg"
   
   - title: About
     url: "/about.html"
+    svg: "people_circle.svg"
