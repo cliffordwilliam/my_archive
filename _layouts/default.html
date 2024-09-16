@@ -48,12 +48,18 @@
                     <button type="button" class="dropdown-item" data-bs-theme-value="light" aria-pressed="false">
                       {% include icon_svgs/sun_fill.svg %}
                       Light
+                      <svg class="visually-hidden bi d-none">
+                        <use href="#check2"></use>
+                      </svg>
                     </button>
                   </li>
                   <li>
                     <button type="button" class="dropdown-item active" data-bs-theme-value="dark" aria-pressed="false">
                       {% include icon_svgs/moon_stars_fill.svg %}
                       Dark
+                      <svg class="visually-hidden bi d-none">
+                        <use href="#check2"></use>
+                      </svg>
                     </button>
                   </li>
                   <li>
@@ -63,6 +69,9 @@
                     <button type="button" class="dropdown-item" data-bs-theme-value="auto" aria-pressed="false">
                       {% include icon_svgs/circle_half.svg %}
                       Auto
+                      <svg class="visually-hidden bi d-none">
+                        <use href="#check2"></use>
+                      </svg>
                     </button>
                   </li>
                 </ul>
