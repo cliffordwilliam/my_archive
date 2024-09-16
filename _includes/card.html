@@ -1,10 +1,10 @@
 <div class="col">
   <div class="card h-100 border-0 shadow">
-    <div class="p-4 bg-secondary card-img-top">
+    <div class="p-4 bg-gradient card-img-top">
       <img class="card-img-top" src="{{ site.baseurl }}/assets/svgs/{{ post.thumbnail }}" alt="{{ post.thumbnail }}"
         style="aspect-ratio: 143 / 90;">
     </div>
-    <div class="card-body border-top">
+    <div class="card-body">
       <h2 class="h5 card-title">{{ post.title }}</h2>
       <h3 class="h6 card-subtitle mb-2 text-body-secondary">{{ post.date | date: "%B %d, %Y" }}</h3>
       <p class="card-text text-truncate" style="max-width: 100%;">{{ post.description }}</p>
