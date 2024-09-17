@@ -9,21 +9,19 @@ tags:
 
 ## Goals
 
-User creates transactions change NPP for existing transactions.
+Users can create transactions change NPP for existing transactions.
 
 ## Menu Location
 
-Transaction - Payroll - Insurance Component - Change NPP
+Transaction - Payroll - Insurance Component - Change NPP BPJS
 
-You can create transaction assignment or transaction change in this page.
+You can create transaction assignment in this page. Now you can make transaction change too, new feature.
 
 ## Screen Capture
 
 ### New tab menu item
 
-New **Insurance Component** sidebar menu item, validate this
-
-> **Note to self:** Is **Insurance Component** a new side bar item?
+New **Change NPP BPJS** page tab.
 
 ### Initial default page state
 
