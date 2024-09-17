@@ -50,7 +50,7 @@ Form card:
 
 ### Select NPP BPJS
 
-> **Note to self:** It is NPP BPJS. Change all occurence of "change NPP" to "change NPP BPJS"?
+> **Note to self:** It is NPP BPJS. Change all occurence of "change NPP" to "change NPP BPJS"
 
 Select Master NPP BPJS
 
