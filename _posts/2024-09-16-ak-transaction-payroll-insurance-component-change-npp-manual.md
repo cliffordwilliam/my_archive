@@ -52,7 +52,7 @@ Form card:
 
 ### Select NPP BPJS
 
-> **Note to self:** Is it select NPP or NPP BPJS? Then do I change the whole "change NPP" to "change NPP BPJS"?
+> **Note to self:** It is NPP BPJS. Change all occurence of "change NPP" to "change NPP BPJS"?
 
 Select Master NPP BPJS
 
@@ -60,7 +60,7 @@ Side effect:
 - Employee selector popup shows employee with the selected Masted NPP BPJS
 - The transaction change form NPP BPJS dropdown options will be all the Master excluding the one that was selected
 
-> **Note to self:** What happens to the Side effect above if there is only 1 Mater NPP BPJS?
+> **Note to self:** If there is 1 Master, then there is no dropdown in transaction card.
 
 From here, you can do either [Add employee](#add-employee) or [Create transaction](#create-transaction) first. You **must do both to enable transaction change form Save & Close button**
 
@@ -84,7 +84,7 @@ Added employees does not appear in Employee selector popup
 
 TODO: List down conditions when employees will not appear in the employee selector popup
 
-> **Note to self:** Employees that has transaction change will not appear in selector popup?
+> **Note to self:** Employees that has transaction change will not appear in selector popup, like termination
 
 ### Fill transaction form
 
@@ -108,7 +108,7 @@ Steps:
 
 Having 1 transaction ticked:
 - Form becomes disabled read mode, where it displays the 1 ticked transaction details
-- > **Note to self:** Will the selected employee card also show the employee assigned to the 1 ticked transaction?
+- > **Note to self:** Selected employee card also show the employee assigned to the 1 ticked transaction
 
 Having none or more than 1 ticked in transaction list:
 - Form enabled normal mode
